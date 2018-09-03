@@ -1,0 +1,8 @@
+.form-style {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 30px;
+    background-color: #d7eef8;
+    font-size: 15px;
+    /* line-height: 0; */
+}

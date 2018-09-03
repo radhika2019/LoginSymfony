@@ -1,8 +1,13 @@
-
-{{ form_start(form) }}
+{% extends 'base.html.twig' %}
+{% block body %}
+{{ parent() }}
+    <div class="col-md-4 col-md-offset-4">
+    {{ form_start(form, {attr: {'class': 'form-style'} }) }}
     {{ form_row(form.username) }}
     {{ form_row(form.email) }}
     {{ form_row(form.password) }}
-
-<button type="submit">Register!</button>
+<br>
+<button type="submit" class="btn btn-primary">Register!</button>
 {{ form_end(form) }}
+    </div>
+{% endblock %}
